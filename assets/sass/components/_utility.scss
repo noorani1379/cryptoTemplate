@@ -1,0 +1,21 @@
+.t-tx-left {
+  transform: translateX(-6rem);
+}
+.t-tx-right {
+  transform: translateX(6rem);
+}
+.txt-left {
+  text-align: left;
+}
+.w-30 {
+  width: 30%;
+}
+.pic-size {
+  height: 57rem;
+  display: none;
+}
+.show.pic-size {
+  display: block;
+  transition: all 1s;
+  @include fade-in;
+}

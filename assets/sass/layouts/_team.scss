@@ -1,0 +1,42 @@
+.team {
+  &__content {
+    // width: 80%;
+    text-align: center;
+  }
+  &__slider {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60rem;
+    & > h2 {
+      font-size: 2.2rem;
+      font-weight: 700;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -10%;
+        width: 50%;
+        display: grid;
+        height: 0.3rem;
+        left: 25%;
+        background-color: $color--indigo;
+      }
+    }
+    & > p {
+      font-size: 1.6rem;
+      color: $color--indigo;
+      font-weight: 500;
+    }
+  }
+  &__img {
+    max-width: 100%;
+    height: 40rem;
+  }
+}

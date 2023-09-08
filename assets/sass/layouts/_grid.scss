@@ -1,0 +1,27 @@
+.footer--grid {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  width: 80%;
+
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  
+}
+.grid {
+  &--center {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+  &__feature {
+    margin: 2rem 0;
+    grid-gap: 2rem;
+
+    display: grid;
+    width: 80%;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+    @include tablet {
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    }
+  }
+}

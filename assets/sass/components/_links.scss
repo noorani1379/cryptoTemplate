@@ -1,0 +1,20 @@
+.footer {
+  &--link {
+    &__item {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: $color--gray;
+      cursor: pointer;
+      & > i {
+        color: #2b21ab;
+      }
+    }
+    &__container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: baseline;
+      height: 15rem;
+    }
+  }
+}

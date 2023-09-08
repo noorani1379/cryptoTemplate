@@ -1,0 +1,53 @@
+.us--me {
+  display: flex;
+  width: 95%;
+  margin: 4rem 0;
+  @include tablet {
+      display: grid;
+      place-items: center;
+  }
+  &__left {
+    @include tablet {
+      display: none;
+    }
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 0 0 2px 1px #eee;
+    width: 50rem;
+    height: 50rem;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 6px;
+    & > input {
+      width: 98%;
+      padding: 1rem;
+      border-radius: 10rem;
+      outline: none;
+      border: 1px solid #eee;
+      font-family: inherit;
+      &:focus {
+        border-color: $color--indigo;
+      }
+    } 
+    & > textarea {
+      width: 98%;
+      border-radius: 1rem;
+      outline: none;
+      border: 1px solid #eee;
+      resize: unset;
+      font-family: inherit;
+      padding: 0.3rem;
+      &:focus {
+        border-color: $color--indigo;
+      }
+    }
+    & > button {
+      background-color: $color--primary;
+      align-self: flex-start;
+      margin-left: 2rem;
+    }
+  }
+}

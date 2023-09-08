@@ -1,0 +1,14 @@
+.e404 {
+  &--container {
+    margin: 4rem 0;
+  }
+  &--content {
+    & > p {
+      text-align: center;
+    }
+    & > a {
+      border-radius: 10rem;
+      margin: 4rem 0;
+    }
+  }
+}

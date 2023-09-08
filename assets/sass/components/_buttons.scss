@@ -1,0 +1,71 @@
+@keyframes leftToRightBtn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    left: 100%;
+    opacity: 1;
+  }
+
+  85% {
+    opacity: 0;
+  }
+}
+.btn {
+  max-width: 25rem;
+  min-height: 5rem;
+  margin: 3rem;
+  &--footer {
+    @include phone {
+      padding: 1rem 0.5rem !important;
+    }
+  }
+  outline: unset;
+  border-radius: 10rem;
+  border: unset;
+
+  color: $color--white;
+
+  &--effect {
+    & > a {
+      color: $color--light;
+    }
+    background-color: $color--purple;
+
+    // change
+    // height: 3rem;
+    padding: 1rem 3rem;
+    color: $color--white;
+    cursor: pointer;
+    position: relative;
+    font-weight: 700;
+    font-size: 1.7rem;
+    font-family: inherit;
+
+    &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      width: 2rem;
+      height: 100%;
+      left: 0;
+      background-image: linear-gradient(
+        rgba($color--white, 0.5),
+        rgba($color--white, 0.6)
+      );
+      transform: rotate(15deg);
+      opacity: 0;
+      transition: all ease-in-out 0.5s;
+      filter: blur(5px);
+    }
+    &:hover::after {
+      //   opacity: 1;
+      animation-name: leftToRightBtn;
+
+      animation-duration: 0.7s;
+      transition: all ease-in-out 0.5s;
+
+      // animation-iteration-count: infinite;
+    }
+  }
+}

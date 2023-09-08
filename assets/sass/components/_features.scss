@@ -1,0 +1,68 @@
+.feature {
+  &__container {
+    margin-top: 4rem;
+  }
+  &--content {
+    width: 100%;
+    text-align: center;
+  }
+  &__paragraph {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    & > p {
+      text-align: center;
+      width: 45%;
+    }
+  }
+  &--card {
+    &__icon {
+      margin-top: 2rem;
+      display: grid;
+      place-items: center;
+      & > i {
+        font-size: 4rem;
+        color: $color--purple;
+        background-color: $color--white;
+        box-shadow: 0 0 3px 2px #777;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        width: 10rem;
+        height: 10rem;
+      }
+    }
+    &__item {
+      background-color: $color--white;
+      box-shadow: 0 0 3px 2px #eee;
+      border-radius: 4px;
+    }
+    &__content {
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & > p {
+        font-size: 1.8rem;
+        width: 90%;
+        color: #666;
+      }
+      & > h5 {
+        font-size: 2.1rem;
+        color: #000;
+        position: relative;
+        margin-bottom: 1rem;
+
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: $color--indigo;
+          top: 100%;
+          left: 0;
+          width: 100%;
+          height: 0.3rem;
+        }
+      }
+    }
+  }
+}

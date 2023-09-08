@@ -1,0 +1,71 @@
+.progress2 {
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+.progress-bar2 {
+  height: 18px;
+  border-radius: 30px;
+  transition: 0.4s linear;
+  transition-property: width, background-color;
+}
+
+.progress-moved .progress-bar2 {
+  background-color: #f3c623;
+  animation: progress 5s infinite;
+}
+
+@keyframes progress {
+  0% {
+    width: 0%;
+    background: #f9bcca;
+  }
+
+  100% {
+    width: 100%;
+    background: #f3c623;
+    box-shadow: 0 0 40px #f3c623;
+  }
+}
+
+.icon {
+  color: #f3c623;
+  animation: icon 5s infinite;
+  background-color: transparent;
+  padding-right: 400px;
+  padding-bottom: 20px;
+}
+
+@keyframes icon {
+  0% {
+    opacity: 0.2;
+    text-shadow: 0 0 0 #f3c623;
+  }
+
+  100% {
+    opacity: 1;
+    text-shadow: 0 0 10px #f3c623;
+  }
+}
+
+.loader {
+  --p: 0;
+  animation: p 5s steps(100) infinite;
+  counter-reset: p var(--p);
+  font-size: 2.1em;
+  position: absolute;
+  bottom: 45px;
+  left: 325px;
+  color: #f3c623;
+}
+
+.loader:after {
+  content: counter(p) "%";
+}
+
+@keyframes p {
+  90%,
+  100% {
+    --p: 100;
+  }
+}

@@ -1,0 +1,74 @@
+.faq {
+  &__links--box {
+    margin-top: 2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    @include tablet {
+      width: 70%;
+    }
+  }
+  &__link {
+    background-color: rgba($color--gray, 0.1);
+    padding: 1rem 2.5rem;
+    border-radius: 10rem;
+    color: $color--indigo;
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  &__item {
+    background-color: rgba($color--gray, 0.1);
+    width: 60rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    &--box {
+      margin-top: 2rem;
+      @include tablet {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+    & > a {
+      font-size: 1.5rem;
+      font-weight: 700;
+      & > i {
+        color: $color--indigo;
+      }
+    }
+  }
+  &__description {
+    border-radius: 4px;
+    height: 0;
+    transition: height ease 1s;
+    & > p {
+      font-size: 1.6rem;
+      color: $color--gray;
+      font-weight: 400;
+      line-height: 3rem;
+      display: none;
+    }
+  }
+  &__toggle {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $color--dark;
+  }
+}
+.active.faq__link {
+  background-color: $color--indigo;
+  color: $color--white;
+}
+
+.active.faq__description {
+  height: 100%;
+  transition: height ease 1s;
+
+  & > p {
+    display: block;
+  }
+}

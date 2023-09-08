@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  text-transform: capitalize;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  @include tablet {
+    font-size: 50%;
+  }
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Urbanist', sans-serif;
+  text-transform: capitalize;
+  overflow-x: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  &--center {
+    width: 100%;
+    display: grid;
+    place-items: center;
+  }
+}
+.bg--light {
+  background-color: #f3f2fb;
+}
+img{
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

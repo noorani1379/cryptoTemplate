@@ -1,0 +1,150 @@
+.heading {
+  &--line--two {
+    position: relative;
+    text-align: center;
+    color: $color--indigo !important;
+    &::after {
+      content: " ";
+      background-color: $color--purple;
+      position: absolute;
+      top: 65%;
+      right: 110%;
+      width: 30%;
+      height: 0.1rem;
+    }
+    &::before {
+      content: " ";
+      background-color: $color--purple;
+      position: absolute;
+      top: 65%;
+      left: 110%;
+      width: 30%;
+      height: 0.1rem;
+    }
+  }
+  &--1 {
+    color: $color--gray-dark;
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 1.4rem;
+  }
+  &--2 {
+    line-height: 40px;
+    font-size: 4rem;
+    color: $color--gray-dark;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+  }
+  &--3 {
+    line-height: 40px;
+    font-size: 4rem;
+    color: $color--gray-dark;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+  }
+  &--4 {
+    font-size: 2.3rem;
+    color: #3e2bc5;
+    font-weight: 500;
+    margin-bottom: 1.4rem;
+  }
+  &--footer__1 {
+    font-size: 3.3rem;
+    @include phone {
+      font-size: 2rem;
+    }
+    color: $color--white;
+  }
+  &--5 {
+    font-size: 1.5rem;
+    color: $color--gray;
+  }
+  &--6 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: $color--primary;
+  }
+  &--line--one {
+    color: $color--purple;
+    position: relative;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    &::after {
+      content: " ";
+      background-color: $color--purple;
+      position: absolute;
+      top: 65%;
+      left: 45%;
+      width: 10%;
+      height: 0.2rem;
+    }
+  }
+}
+
+.paragraph {
+  &--1 {
+    color: $color--gray;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 25px;
+  }
+
+  &--5 {
+    font-size: 1.5rem;
+    color: $color--gray;
+    align-self: center;
+  }
+}
+.nav-txt {
+  font-size: 1.8rem;
+  color: $color--gray-dark;
+  font-weight: 500;
+}
+.section-header {
+  width: 100%;
+  text-align: center;
+  margin: 2rem 0rem;
+  // height: 70rem;
+}
+.th-2 {
+  color: $color--primary;
+
+  font-weight: 100;
+  font-size: 1.5rem;
+  //margin-left: 5rem;
+  text-align: left;
+  //padding-left: 5rem;
+}
+.th-1 {
+  width: 20rem;
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: 600;
+  //margin-right: 5rem;
+}
+.link{
+  color: $color--light;
+  font-size: 3rem;
+  
+}
+.writer{
+  color: #e4e4e7;
+  font-size: 2rem;
+  
+}
+.tag{
+  color: #e4e4e7;
+  font-size: 2rem;
+}
+.roww{
+      display: flex;
+    justify-content: space-around;
+    width: 62%;
+    align-items: center;
+    margin-left: 7rem;
+
+}
+

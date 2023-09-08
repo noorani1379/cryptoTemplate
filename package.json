@@ -1,0 +1,23 @@
+{
+  "name": "cryptonik",
+  "version": "1.0.0",
+  "description": "cryptonik",
+  "main": "index.js",
+  "scripts": {
+    "w": "node-sass assets/sass/main.scss assets/css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GREATDEV2021/crypto.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GREATDEV2021/crypto/issues"
+  },
+  "homepage": "https://github.com/GREATDEV2021/crypto#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
